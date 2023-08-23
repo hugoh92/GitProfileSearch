@@ -17,25 +17,25 @@ A aplicação está hospedada no link https://git-search-profile.netlify.app/.
 
 1. Node.js e npm instalados.
 2. Angular CLI instalado (npm install -g @angular/cli).
-3. Clone este repositório para o seu computador: git clone https://github.com/seu-usuario/nome-do-repositorio.git
-4. Acesse o diretório do projeto: cd nome-do-repositorio
-5. Instale as dependências do projeto: npm install
+3. Clone este repositório para o seu computador: git clone https://github.com/seu-usuario/nome-do-repositorio.git.
+4. Acesse o diretório do projeto: cd nome-do-repositorio.
+5. Instale as dependências do projeto: npm install.
 6. Para rodar a aplicação localmente: ng serve. Acesse a aplicação no seu navegador em http://localhost:4200/.
-7. Para criar uma versão otimizada para produção: ng build --prod
+7. Para criar uma versão otimizada para produção: ng build --prod.
 
 # Estrutura do Projeto
 
-src/: A parte principal onde você escreve seu código.
-app/: Contém os componentes e serviços do aplicativo.
-api.service.ts: Faz chamadas à API do GitHub.
-home/: Página inicial.
-perfil/: Página de perfil.
-app.component.ts: Estrutura do aplicativo.
-assets/: Armazena imagens e outros arquivos.
-index.html: Página principal do aplicativo.
-angular.json: Configurações do projeto.
-tsconfig.json: Configurações de compilação TypeScript.
-package.json: Informações do projeto e dependências.
+1. src/: A parte principal onde você escreve seu código.
+2. app/: Contém os componentes e serviços do aplicativo.
+3. api.service.ts: Faz chamadas à API do GitHub.
+4. home/: Página inicial.
+5. perfil/: Página de perfil.
+6. app.component.ts: Estrutura do aplicativo.
+7. assets/: Armazena imagens e outros arquivos.
+8. index.html: Página principal do aplicativo.
+9. angular.json: Configurações do projeto.
+10. tsconfig.json: Configurações de compilação TypeScript.
+11. package.json: Informações do projeto e dependências.
 
 ## Development server
 
