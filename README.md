@@ -1,5 +1,5 @@
 
-#Descrição
+# Descrição
 
 Esta aplicação Angular busca perfis de desenvolvedores na API pública do GitHub e exibe seus dados em uma página de perfil. 
 A página de perfil exibe as informações do usuário, incluindo nome, nome de usuário, bio, seguidores, seguindo, empresa, localização, email, site e conta do Twitter, se disponíveis. 
@@ -13,7 +13,7 @@ Foi escolhido o framework Angular na versão 11.1.4, na qual já estou bem famil
 interface do usuário do Material Design para Angular, além disso foi utilizado o GitHub API, a API pública do GitHub para buscar dados de perfil e repositórios de desenvolvedores.
 A aplicação está hospedada no link https://git-search-profile.netlify.app/.
 
-#Execução
+# Execução
 
 1. Node.js e npm instalados.
 2. Angular CLI instalado (npm install -g @angular/cli).
@@ -23,7 +23,7 @@ A aplicação está hospedada no link https://git-search-profile.netlify.app/.
 6. Para rodar a aplicação localmente: ng serve. Acesse a aplicação no seu navegador em http://localhost:4200/.
 7. Para criar uma versão otimizada para produção: ng build --prod
 
-#Estrutura do Projeto
+# Estrutura do Projeto
 
 src/: A parte principal onde você escreve seu código.
 app/: Contém os componentes e serviços do aplicativo.
