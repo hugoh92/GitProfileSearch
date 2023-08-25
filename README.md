@@ -1,6 +1,41 @@
+
+# Descrição
+
+Esta aplicação Angular busca perfis de desenvolvedores na API pública do GitHub e exibe seus dados em uma página de perfil. 
+A página de perfil exibe as informações do usuário, incluindo nome, nome de usuário, bio, seguidores, seguindo, empresa, localização, email, site e conta do Twitter, se disponíveis. 
+Além disso, os repositórios do usuário são exibidos em uma lista ordenada pelo número de estrelas, com links para os repositórios e informações detalhadas sobre cada repositório, 
+incluindo descrição, linguagem, data de criação e dias desde a última atualização.
+
 # GitPerfilBusca
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+Foi escolhido o framework Angular na versão 11.1.4, na qual já estou bem familiarizado, juntamente com o Angular Material, que é Uma biblioteca de componentes de 
+interface do usuário do Material Design para Angular, além disso foi utilizado o GitHub API, a API pública do GitHub para buscar dados de perfil e repositórios de desenvolvedores.
+A aplicação está hospedada no link https://git-search-profile.netlify.app/.
+
+# Execução
+
+1. Node.js e npm instalados.
+2. Angular CLI instalado (npm install -g @angular/cli).
+3. Clone este repositório para o seu computador: git clone https://github.com/seu-usuario/nome-do-repositorio.git.
+4. Acesse o diretório do projeto: cd nome-do-repositorio.
+5. Instale as dependências do projeto: npm install.
+6. Para rodar a aplicação localmente: ng serve. Acesse a aplicação no seu navegador em http://localhost:4200/.
+7. Para criar uma versão otimizada para produção: ng build --prod.
+
+# Estrutura do Projeto
+
+1. src/: A parte principal onde você escreve seu código.
+2. app/: Contém os componentes e serviços do aplicativo.
+3. api.service.ts: Faz chamadas à API do GitHub.
+4. home/: Página inicial.
+5. perfil/: Página de perfil.
+6. app.component.ts: Estrutura do aplicativo.
+7. assets/: Armazena imagens e outros arquivos.
+8. index.html: Página principal do aplicativo.
+9. angular.json: Configurações do projeto.
+10. tsconfig.json: Configurações de compilação TypeScript.
+11. package.json: Informações do projeto e dependências.
 
 ## Development server
 
