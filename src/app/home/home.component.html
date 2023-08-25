@@ -1,0 +1,30 @@
+<!-- <div class="container">
+  <h1>GitHub Profile Search</h1>
+  <mat-card>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput [(ngModel)]="username" placeholder="Enter GitHub Username">
+          <span matTextPrefix>$&nbsp;</span>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="searchProfile()">Search</button>
+      </mat-card-content>
+  </mat-card>
+</div> -->
+<!--   <h1>GitHub Profile Search</h1>
+  <input type="text" [(ngModel)]="username" placeholder="Enter GitHub Username">
+  <button (click)="searchProfile()">Search</button> -->
+
+
+<div class="container">
+    <div class="card-busca">
+      
+      <!-- <span>GitHub Profile</span> -->
+      <div class="img-logo">
+        <img src="/assets/icons/logo2.png" alt="Company Icon">
+      </div>
+      <div class="input-container">
+        <input type="text" [(ngModel)]="username" placeholder="Search">
+        <button class="bt-search" (click)="searchProfile()">Search</button>
+      </div>
+    </div>
+</div>

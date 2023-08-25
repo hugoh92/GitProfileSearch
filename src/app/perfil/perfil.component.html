@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="card">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img class="profile-avatar" [src]="user.avatar_url" alt="Profile Avatar">
+        <div class="profile-info">
+          <span class="name">{{ user.name }}</span>
+          <br>
+          <span class="username">@{{ user.login }}</span>
+        </div>
+      </div>
+      <div class="profile-details">
+        <p class="bio">{{ user.bio }}</p>
+        <div class="div-infos">
+          <img src="/assets/icons/follow.png" alt="Company Icon"><span class="icons-text">{{ user.followers }}
+            Seguidores</span>
+        </div>
+
+        <div class="div-infos">
+          <img src="/assets/icons/heart.png" alt="Company Icon"><span class="icons-text">{{ user.following }}
+            Seguindo</span>
+        </div>
+        <br>
+        <div class="div-infos">
+          <img src="/assets/icons/work.png" alt="Company Icon"><span class="icons-text">{{ user.company }}
+          </span>
+        </div>
+        <div class="div-infos">
+          <img src="/assets/icons/pin.png" alt="Company Icon"><span class="icons-text">{{ user.location }}</span>
+        </div>
+        <div class="div-infos">
+          <img src="/assets/icons/email.png" alt="Company Icon"><span class="icons-text">{{ user.email }}</span>
+        </div>
+        <div class="div-infos">
+          <img src="/assets/icons/site.png" alt="Company Icon"><span *ngIf="user.blog"><a class="icons-text"
+              [href]="user.blog" target="_blank">{{ user.blog }}</a></span>
+        </div>
+        <div class="div-infos">
+          <img src="/assets/icons/twitter.png" alt="Company Icon"><span *ngIf="user.twitter_username"><a
+              class="icons-text" [href]="'https://twitter.com/' + user.twitter_username" target="_blank">{{
+              user.twitter_username }}</a></span>
+        </div>
+        <div class="grid-buttons">
+          <button mat-button (click)="openLink('mailto:' + user.email)">Contato</button>
+          <button mat-button class="back-button" (click)="goBack()">Voltar</button>
+        </div>
+      </div>
+    </div>
+    <div class="repo-list">
+      <ul>
+        <li *ngFor="let repo of repos 'stargazers_count': true">
+          <a class="repo-name" [href]="repo.html_url" target="_blank" style="color: #171923; text-decoration: none;">{{
+            repo.name }}</a>
+          <br>
+          <br>
+          <p class="bio">{{ repo.description }}</p>
+          <br>
+          <div class="div-infos"><img src="/assets/icons/star.png" alt="Company Icon"><span class="icons-text"> {{
+              repo.stargazers_count }} stars - Atualizado em {{ repo.updated_at | date }}</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

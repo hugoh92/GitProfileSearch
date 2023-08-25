@@ -1,0 +1,180 @@
+  .card {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    background-color: #FFFF;
+  }
+
+  .profile-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-right: 30px;
+    max-width: 280px;
+  }
+
+  .profile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    width: 280px;
+  }
+
+  .profile-info {
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  .profile-details {
+    width: 290px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #171923;
+  }
+
+  .username {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0;
+  }
+
+  //card infos
+
+  .bio {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4A5568;
+    text-align: justify;
+
+  }
+
+  .icons-text {
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: #4A5568;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-decoration: none;
+  }
+
+  .repo-name {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  a {
+    margin-bottom: 30px;
+  }
+
+  .repo-name:hover {
+    text-decoration: underline;
+  }
+
+  .div-infos {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .profile-info p {
+    margin: 5px 0;
+  }
+
+  .repo-list {
+    flex: 2;
+  }
+
+  .repo-list h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .repo-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .repo-list li {
+    margin-top: 10px;
+    border-bottom: 1px solid #E2E8F0;
+  }
+
+  .repo-list a {
+    text-decoration: none;
+  }
+
+  .repo-list p {
+    margin: 5px 0;
+    color: #586069;
+  }
+
+  .grid-buttons {
+    width: 270px;
+
+    text-align: center;
+
+  }
+
+  button {
+    width: 100px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #8C19D2;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin: 0 10px;
+  }
+
+  .back-button {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width:690px) {
+    .card {
+      display: grid;
+    }
+
+    .profile-card {
+      max-width: 700px;
+      justify-content: flex-start;
+      padding: 0px;
+      margin-right: 0px;
+
+    }
+
+  }

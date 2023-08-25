@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .card-busca{
+    height: 213px;
+    width: 800px;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+    justify-content:center;
+    display: grid;
+    margin: 0 auto;
+  }
+
+  .img-logo{
+    width: 800px;
+    //height: 200px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    //margin: 0 auto;
+    display: flex;
+    position: relative;
+  }
+  
+  .input-container {
+    margin-top: 55px;
+  
+    
+  }
+  
+  .input-container input {
+    //padding: 10px;
+    width: 592px;
+    height: 48px;
+    font-size: 16px;
+    margin-right: 24px;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+  }
+  
+  .input-container button {
+    width: 176px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #8C19D2;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .btn-text-top {
+    background-color: #f5f6fa;
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding: 15px 50px 15px 30px;
+    border-radius: 20px;
+    width: 100%!important;
+    height: 42px;
+    font-weight: 300;
+    color: #8795a2;
+  }
+      
+  .btn-buscar-top {
+    width: 20px!important;
+    height: 22px;
+    background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
+    cursor: pointer!important;
+    border: none;
+    transform: translateY(-50%);
+    padding: 0;
+    position: relative;
+    top: -35px;
+    left: 280px;
+  }
+  
+
+  .submit-lente {
+    position:absolute;
+    top:0; right:0;
+    z-index:10;
+    border:none;
+    background:transparent;
+    outline:none;
+  }
+  
+  .submit-line {
+    position: relative;
+    width: 200px;
+  }
+  
+  .submit-line input {
+    width: 100%;
+  }
+
+  @media screen and (max-width:828px) {
+
+    .input-container{
+      //display: grid;
+      //justify-content: center;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      margin: 0 auto;
+      display: grid;
+  
+    }
+
+    .input-container button {
+      
+      margin: 20px auto;
+    }
+
+    .input-container input {
+      //padding: 10px;
+      max-width: 300px;
+      height: 48px;
+      font-size: 16px;
+      margin-right: 24px;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .img-logo{
+      max-width: 400px;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      display: flex;
+    }
+
+  }
+
+  @media screen and (max-width:496px) {
+
+    .img-logo{
+      max-width: 300px;
+  
+    }
+    img{
+      width: 300px;
+    }
+  }
